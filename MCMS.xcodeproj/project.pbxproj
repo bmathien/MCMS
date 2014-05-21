@@ -21,6 +21,9 @@
 		AE581884192BD31D0097AB49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE581866192BD31D0097AB49 /* UIKit.framework */; };
 		AE58188C192BD31D0097AB49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE58188A192BD31D0097AB49 /* InfoPlist.strings */; };
 		AE58188E192BD31D0097AB49 /* MCMSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE58188D192BD31D0097AB49 /* MCMSTests.m */; };
+		AE58189D192BD5180097AB49 /* MagicalCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = AE58189C192BD5180097AB49 /* MagicalCreature.m */; };
+		AEE49087192BF872001A42C3 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE49086192BF872001A42C3 /* CheckMate.framework */; };
+		AEE4908D192C05F5001A42C3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE4908C192C05F5001A42C3 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		AE581889192BD31D0097AB49 /* MCMSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCMSTests-Info.plist"; sourceTree = "<group>"; };
 		AE58188B192BD31D0097AB49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE58188D192BD31D0097AB49 /* MCMSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMSTests.m; sourceTree = "<group>"; };
+		AE58189B192BD5180097AB49 /* MagicalCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalCreature.h; sourceTree = "<group>"; };
+		AE58189C192BD5180097AB49 /* MagicalCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalCreature.m; sourceTree = "<group>"; };
+		AEE49086192BF872001A42C3 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../CheckMate.framework; sourceTree = "<group>"; };
+		AEE4908B192C05F5001A42C3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		AEE4908C192C05F5001A42C3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE49087192BF872001A42C3 /* CheckMate.framework in Frameworks */,
 				AE581865192BD31D0097AB49 /* CoreGraphics.framework in Frameworks */,
 				AE581867192BD31D0097AB49 /* UIKit.framework in Frameworks */,
 				AE581863192BD31D0097AB49 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		AE581861192BD31D0097AB49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEE49086192BF872001A42C3 /* CheckMate.framework */,
 				AE581862192BD31D0097AB49 /* Foundation.framework */,
 				AE581864192BD31D0097AB49 /* CoreGraphics.framework */,
 				AE581866192BD31D0097AB49 /* UIKit.framework */,
@@ -115,6 +125,10 @@
 				AE581871192BD31D0097AB49 /* AppDelegate.h */,
 				AE581872192BD31D0097AB49 /* AppDelegate.m */,
 				AE581874192BD31D0097AB49 /* Main.storyboard */,
+				AE58189B192BD5180097AB49 /* MagicalCreature.h */,
+				AE58189C192BD5180097AB49 /* MagicalCreature.m */,
+				AEE4908B192C05F5001A42C3 /* DetailViewController.h */,
+				AEE4908C192C05F5001A42C3 /* DetailViewController.m */,
 				AE581877192BD31D0097AB49 /* ViewController.h */,
 				AE581878192BD31D0097AB49 /* ViewController.m */,
 				AE58187A192BD31D0097AB49 /* Images.xcassets */,
@@ -249,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE4908D192C05F5001A42C3 /* DetailViewController.m in Sources */,
 				AE581879192BD31D0097AB49 /* ViewController.m in Sources */,
+				AE58189D192BD5180097AB49 /* MagicalCreature.m in Sources */,
 				AE581873192BD31D0097AB49 /* AppDelegate.m in Sources */,
 				AE58186F192BD31D0097AB49 /* main.m in Sources */,
 			);
@@ -376,6 +392,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/teacher/Desktop/mobile,
+					makers,
+					/Users/teacher/Desktop/mobile,
+					makers,
+					/Users/teacher/Desktop/mobile,
+					makers,
+					/Users/teacher/Desktop/mobile,
+					makers,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCMS/MCMS-Prefix.pch";
 				INFOPLIST_FILE = "MCMS/MCMS-Info.plist";
@@ -389,6 +416,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/teacher/Desktop/mobile,
+					makers,
+					/Users/teacher/Desktop/mobile,
+					makers,
+					/Users/teacher/Desktop/mobile,
+					makers,
+					/Users/teacher/Desktop/mobile,
+					makers,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCMS/MCMS-Prefix.pch";
 				INFOPLIST_FILE = "MCMS/MCMS-Info.plist";
@@ -456,6 +494,7 @@
 				AE581893192BD31D0097AB49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE581894192BD31D0097AB49 /* Build configuration list for PBXNativeTarget "MCMSTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +503,7 @@
 				AE581896192BD31D0097AB49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
